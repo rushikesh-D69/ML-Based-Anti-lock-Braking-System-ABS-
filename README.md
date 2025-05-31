@@ -14,6 +14,7 @@ A novel machine learning-enhanced Anti-lock Braking System that uses real-time r
 - **Compact Model**: 875 kB model size suitable for automotive ECUs
 - **High Accuracy**: 85.6% test accuracy across road surface conditions
 - **Automotive Ready**: Compatible with existing ABS hardware architectures
+![image](https://github.com/user-attachments/assets/6b97cb10-e17b-404e-8f21-d8d7d52379df)
 
 ## 📊 Performance Results
 
@@ -75,56 +76,38 @@ friction_coeff = abs_system.get_friction_coefficient(road_class)
 
 print(f"Predicted road surface: {road_class}")
 print(f"Friction coefficient: {friction_coeff}")
-```
 
-## 📊 Simulation and Visualization
+## 📈 How It Works
 
-### MATLAB/Simulink Integration
+1. **Preprocessing (Python):**
+   - Normalize and impute vehicle sensor data
+   - Balance classes for road surface
 
-The repository includes Simulink models for system simulation:
-![image](https://github.com/user-attachments/assets/64d321a5-3b68-49a0-8e8d-444954002522)
+2. **Model Training (MATLAB):**
+   - Trained using Classification Learner
+   - Exported to `roadPredictor.mdl`
 
-```matlab
-% Load the ML model
-model = py.joblib.load('data/models/road_surface_classifier.pkl');
+3. **Simulation (Simulink):**
+   - Vehicle dynamics modeled
+   - Friction is estimated from predicted class
+   - Braking control adjusts based on slip and μ
 
-% Run simulation
-sim('abs_simulation_model.slx');
+![image](https://github.com/user-attachments/assets/82da4104-ea81-456a-ae23-b7766305a719)
 
-% Analyze results
-plot(wheel_speed, stopping_distance);
-title('ML-Enhanced ABS Performance');
-```
 
-### Performance Visualization
+## 🧪 Results
 
-```python
-import matplotlib.pyplot as plt
-from src.utils.visualizer import PerformanceVisualizer
+- 🚦 Vehicle comes to rest smoothly based on predicted road surface
+- 📉 Speed vs Time and Slip vs Time graphs validate controller
+- 🧮 High classification accuracy of road surface conditions
 
-# Create performance plots
-viz = PerformanceVisualizer()
-viz.plot_confusion_matrix(y_true, y_pred)
-viz.plot_roc_curves(y_true, y_pred_proba)
-viz.plot_feature_importance(model.feature_importances_)
-```
 
 
 ### Abstract
 
 This research presents a novel approach to enhancing vehicle braking performance by integrating machine learning-based road surface classification with traditional Anti-lock Braking System technology. The ML model achieved 84.4% validation accuracy and 85.6% test accuracy with a compact 875 kB model size, enabling real-time deployment on automotive ECUs with prediction speeds of ~56,000 observations per second.
 
-### Citation
 
-```bibtex
-@article{ml_enhanced_abs_2025,
-  title={Machine Learning-Enhanced Anti-lock Braking System: Real-time Road Surface Classification for Adaptive Brake Control},
-  author={[Your Name]},
-  journal={[Journal Name]},
-  year={2025},
-  publisher={[Publisher]}
-}
-```
 
 ## 🔮 Future Work
 
