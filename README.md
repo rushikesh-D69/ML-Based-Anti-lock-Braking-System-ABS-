@@ -105,9 +105,11 @@ print(f"Friction coefficient: {friction_coeff}")
 -  Speed vs Time and Slip vs Time graphs validate controller
 -  High classification accuracy of road surface conditions
 
-![ScopePrintToFigure](https://github.com/user-attachments/assets/57c468d3-89ce-467b-aac6-15504ad5811a)
-![354](https://github.com/user-attachments/assets/11d2f01f-f301-4005-affa-545d8e39375f)
-![12](https://github.com/user-attachments/assets/31410141-b4a8-4077-a68c-810654889966)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/57c468d3-89ce-467b-aac6-15504ad5811a" alt="ScopePrintToFigure" width="30%">
+  <img src="https://github.com/user-attachments/assets/11d2f01f-f301-4005-affa-545d8e39375f" alt="354" width="30%">
+  <img src="https://github.com/user-attachments/assets/31410141-b4a8-4077-a68c-810654889966" alt="12" width="30%">
+</p>
 
 
 
