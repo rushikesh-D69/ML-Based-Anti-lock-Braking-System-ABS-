@@ -10,25 +10,16 @@ This repository contains a Simulink model for simulating ABS (Anti-lock Braking 
 ##  Files
 
 - `untitled11.slx`: Simulink model file implementing the ABS braking logic.
-- `ClassificationLearnerSession.mat`: (if included) Contains the trained ML model predicting road conditions.
+- `ClassificationLearnerSession.mat`:Contains the trained ML model predicting road conditions.
 
 ---
 
-##  Model Overview
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/d49179eb-b81e-4014-84ee-2166a969af5d" alt="Simulink Model" width="90%">
-</p>
-
----
 
 ## ⚙ Initial Parameters
 
 Before running the simulation, the following variables **must be initialized** in the MATLAB workspace:
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/ba2eb764-8d2a-4030-b23f-1c255cc52717" alt="Initial Parameters" width="40%">
-</p>
+
 
 ```matlab
 g = 9.8;     % Acceleration due to gravity (m/s^2)
