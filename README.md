@@ -41,8 +41,7 @@ Vehicle Sensors → Feature Extraction → ML Classifier → Friction Estimator 
   8 Parameters    Preprocessing    Road Surface    Friction Coeff.    Slip Control    Optimal Braking
                                   Classification      (μ values)
 ```
-
-![Machine Learning-Enhanced Anti-lock Braking System_ Real-time Road Surface Classification for Adaptive Brake Control - visual selection](https://github.com/user-attachments/assets/7c0ca2d4-9dcc-4fb0-a565-e9a4755797bc)
+![image](https://github.com/user-attachments/assets/82da4104-ea81-456a-ae23-b7766305a719)
 
 
 ### Input Features (8 Parameters)
@@ -96,7 +95,10 @@ print(f"Friction coefficient: {friction_coeff}")
    - Friction is estimated from predicted class
    - Braking control adjusts based on slip and μ
 
-![image](https://github.com/user-attachments/assets/82da4104-ea81-456a-ae23-b7766305a719)
+
+
+![Machine Learning-Enhanced Anti-lock Braking System_ Real-time Road Surface Classification for Adaptive Brake Control - visual selection](https://github.com/user-attachments/assets/7c0ca2d4-9dcc-4fb0-a565-e9a4755797bc)
+
 
 
 ##  Results
