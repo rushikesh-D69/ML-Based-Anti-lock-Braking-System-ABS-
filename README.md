@@ -5,7 +5,7 @@
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2024a-blue.svg)](https://www.mathworks.com/products/matlab.html)
 [![Status: Research](https://img.shields.io/badge/Status-Research-red.svg)]()
 
-## 🚗 Overview
+##  Overview
 
 A novel machine learning-enhanced Anti-lock Braking System that uses real-time road surface classification to adaptively control brake pressure. This system integrates ML-based road condition prediction with traditional ABS control logic to improve braking performance across diverse road surfaces.
 
@@ -14,7 +14,11 @@ A novel machine learning-enhanced Anti-lock Braking System that uses real-time r
 - **Compact Model**: 875 kB model size suitable for automotive ECUs
 - **High Accuracy**: 85.6% test accuracy across road surface conditions
 - **Automotive Ready**: Compatible with existing ABS hardware architectures
+
+  
 ![image](https://github.com/user-attachments/assets/6b97cb10-e17b-404e-8f21-d8d7d52379df)
+
+
 
 ## 📊 Performance Results
 
@@ -29,7 +33,7 @@ A novel machine learning-enhanced Anti-lock Braking System that uses real-time r
 
 
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 Vehicle Sensors → Feature Extraction → ML Classifier → Friction Estimator → ABS Controller → Brake Modulation
@@ -77,7 +81,7 @@ friction_coeff = abs_system.get_friction_coefficient(road_class)
 print(f"Predicted road surface: {road_class}")
 print(f"Friction coefficient: {friction_coeff}")
 
-## 📈 How It Works
+##  How It Works
 
 1. **Preprocessing (Python):**
    - Normalize and impute vehicle sensor data
@@ -95,11 +99,17 @@ print(f"Friction coefficient: {friction_coeff}")
 ![image](https://github.com/user-attachments/assets/82da4104-ea81-456a-ae23-b7766305a719)
 
 
-## 🧪 Results
+##  Results
 
-- 🚦 Vehicle comes to rest smoothly based on predicted road surface
-- 📉 Speed vs Time and Slip vs Time graphs validate controller
-- 🧮 High classification accuracy of road surface conditions
+-  Vehicle comes to rest smoothly based on predicted road surface
+-  Speed vs Time and Slip vs Time graphs validate controller
+-  High classification accuracy of road surface conditions
+
+![ScopePrintToFigure](https://github.com/user-attachments/assets/57c468d3-89ce-467b-aac6-15504ad5811a)
+![354](https://github.com/user-attachments/assets/11d2f01f-f301-4005-affa-545d8e39375f)
+![12](https://github.com/user-attachments/assets/31410141-b4a8-4077-a68c-810654889966)
+
+
 
 
 
@@ -108,29 +118,7 @@ print(f"Friction coefficient: {friction_coeff}")
 This research presents a novel approach to enhancing vehicle braking performance by integrating machine learning-based road surface classification with traditional Anti-lock Braking System technology. The ML model achieved 84.4% validation accuracy and 85.6% test accuracy with a compact 875 kB model size, enabling real-time deployment on automotive ECUs with prediction speeds of ~56,000 observations per second.
 
 
-
-## 🔮 Future Work
-
-- [ ] **Multi-Modal Sensor Fusion**: Integration of camera and radar data
-- [ ] **Deep Learning Models**: CNN/RNN architectures for temporal patterns
-- [ ] **Transfer Learning**: Cross-vehicle platform adaptation
-- [ ] **Edge Computing**: Deployment on automotive edge computing platforms
-- [ ] **5G Integration**: Vehicle-to-everything (V2X) communication for collaborative sensing
-- [ ] **Digital Twin**: Virtual testing environment for validation
-
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Automotive research community for foundational ABS research
-- Open-source ML libraries (scikit-learn, TensorFlow)
-- Vehicle manufacturers for sensor data standards
-- Academic institutions for research collaboration
-
-## 📚 References
+##  References
 
 1. Wellstead, P. E., & Pettit, N. B. (1997). Analysis and redesign of an antilock brake system controller. *IEE Proceedings-Control Theory and Applications*.
 
